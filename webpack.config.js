@@ -1,4 +1,5 @@
 const path = require('path')
+const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
   entry: './src/main.js',
@@ -7,4 +8,20 @@ module.exports = {
     filename: 'main.js',
     clean: true
   },
+  module: {
+    rules: [
+      {
+        test: /\.vue$/,
+        use: 'vue-loader'
+      },
+    ]
+  },
+  plugins: [
+    new VueLoaderPlugin(),
+  ],
+  devServer: {
+    host:'localhost',
+    port: 8088,
+    hot: true
+  }
 }
