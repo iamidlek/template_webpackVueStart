@@ -2,7 +2,7 @@
   <h1 @click="adding">Test Text</h1>
   <p>{{ count }}</p>
   <div>
-    <img src="./assets/logo.png" alt="logo">
+    <img src="~assets/logo.png" alt="logo">
   </div>
 </template>
 
