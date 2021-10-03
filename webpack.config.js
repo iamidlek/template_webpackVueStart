@@ -19,6 +19,8 @@ module.exports = {
   },
   plugins: [
     new HtmlPlugin({
+      favicon: "./static/logo.png",
+      title: 'Vue Template',
       template: './index.html'
     }),
     new VueLoaderPlugin(),
