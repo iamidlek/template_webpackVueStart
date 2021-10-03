@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
